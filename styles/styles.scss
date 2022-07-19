@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@mixin background-scale($img) {
+  background-image: url($img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin cta-button {
+  margin-top: 1rem;
+  padding: 0.3rem;
+
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: $rounded-border;
+
+  &:hover {
+    background-color: rgb(18, 46, 88);
+    color: white;
+
+    cursor: pointer;
+    transition: $trans-time;
+  }
+}
+
+//Border radii
+$rounded-border: 10px;
+$trans-time: 0.3s;
+$sect-pad: 1rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: rubik;
+}
+
+header {
+  text-align: center;
+  height: 90vh;
+
+  @include background-scale(
+    "https://i.gifer.com/origin/2d/2de89fd05b84b6661fae53466928144f.gif"
+  );
+}
+
+nav {
+  text-align: right;
+  padding: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    background-color: rgb(35, 35, 35);
+    padding: 0.3rem;
+    border-radius: $rounded-border;
+  }
+}
+
+.impArea {
+  position: relative;
+  top: 35%;
+
+  color: white;
+
+  button {
+    @include cta-button();
+  }
+}
+
+// Split card sections
+
+// The experience cards
+.sp {
+  display: flex;
+  padding: $sect-pad;
+
+  color: white;
+  @include background-scale(
+    "https://preview.redd.it/3q24jrj3zjc61.png?width=3840&format=png&auto=webp&s=06c3be9e56ccc003696cebca66db7298bac0b58a"
+  );
+  border-radius: $rounded-border;
+
+  margin: 1rem 0;
+
+  img {
+    border-radius: $rounded-border;
+  }
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  .card-subtitle {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    @include cta-button();
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sp {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sp {
+    img {
+      width: 50%;
+    }
+
+    .text {
+      padding: 1rem;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    margin: 1rem;
+    border-radius: $rounded-border;
+  }
+
+  .split {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    margin-left: 1rem;
+  }
+}
+
+.projects {
+  background-color: rgb(220, 220, 220);
+  padding: $sect-pad;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #000000;
+}
