@@ -8,10 +8,7 @@
 header {
   text-align: center;
   height: 90vh;
-  background-image: url("https://i.gifer.com/origin/2d/2de89fd05b84b6661fae53466928144f.gif");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #171717;
 }
 
 nav {
@@ -30,7 +27,7 @@ nav a {
 .impArea {
   position: relative;
   top: 35%;
-  color: white;
+  color: #fbfbfd;
 }
 
 .impArea button {
@@ -43,7 +40,7 @@ nav a {
 
 .impArea button:hover {
   background-color: #122e58;
-  color: white;
+  color: #fbfbfd;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -54,7 +51,7 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
-  color: white;
+  color: #fbfbfd;
   background-image: url("https://preview.redd.it/3q24jrj3zjc61.png?width=3840&format=png&auto=webp&s=06c3be9e56ccc003696cebca66db7298bac0b58a");
   background-position: center;
   background-size: cover;
@@ -86,7 +83,7 @@ nav a {
 
 .sp button:hover {
   background-color: #122e58;
-  color: white;
+  color: #fbfbfd;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -130,7 +127,7 @@ nav a {
 }
 
 .projects {
-  background-color: gainsboro;
+  background-color: #fbfbfd;
   padding: 1rem;
 }
 

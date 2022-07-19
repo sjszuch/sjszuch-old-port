@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+$light: #fbfbfd;
+$mid: #f5f5f7;
+$dark: #171717;
+$accent: #122e58;
+
 @mixin background-scale($img) {
   background-image: url($img);
   background-position: center;
@@ -16,8 +21,8 @@
   border-radius: $rounded-border;
 
   &:hover {
-    background-color: rgb(18, 46, 88);
-    color: white;
+    background-color: $accent;
+    color: $light;
 
     cursor: pointer;
     transition: $trans-time;
@@ -39,9 +44,7 @@ header {
   text-align: center;
   height: 90vh;
 
-  @include background-scale(
-    "https://i.gifer.com/origin/2d/2de89fd05b84b6661fae53466928144f.gif"
-  );
+  background-color: $dark;
 }
 
 nav {
@@ -62,7 +65,7 @@ nav {
   position: relative;
   top: 35%;
 
-  color: white;
+  color: $light;
 
   button {
     @include cta-button();
@@ -76,7 +79,7 @@ nav {
   display: flex;
   padding: $sect-pad;
 
-  color: white;
+  color: $light;
   @include background-scale(
     "https://preview.redd.it/3q24jrj3zjc61.png?width=3840&format=png&auto=webp&s=06c3be9e56ccc003696cebca66db7298bac0b58a"
   );
@@ -137,7 +140,7 @@ nav {
 }
 
 .projects {
-  background-color: rgb(220, 220, 220);
+  background-color: $light;
   padding: $sect-pad;
 }
 
