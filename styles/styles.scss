@@ -44,7 +44,7 @@ header {
   text-align: center;
   height: 90vh;
 
-  background-color: $dark;
+  @include background-scale('../images/star-bg.jpg');
 }
 
 nav {
