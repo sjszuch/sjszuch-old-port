@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: rubik;
+  line-height: 1.5;
 }
 
 header {
@@ -16,7 +21,7 @@ header {
 
 nav {
   text-align: right;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 nav a {
@@ -42,7 +47,7 @@ nav a {
 }
 
 .impArea button:hover {
-  background-color: #122e58;
+  background-color: #186d8b;
   color: #fffafa;
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -94,7 +99,7 @@ nav a {
 }
 
 .link-btn:hover {
-  background-color: #122e58;
+  background-color: #186d8b;
   color: #fffafa;
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -108,10 +113,10 @@ nav a {
 }
 
 .icon-holder .i {
-  background-color: #0e2343;
+  background-color: #145c75;
   height: 2.5rem;
   width: 2.5rem;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 100%;
   position: relative;
   left: 1rem;
@@ -173,6 +178,71 @@ nav a {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 1rem 0;
+  }
+  .card img {
+    border-radius: 10px 10px 0 0;
+  }
+  .card .text {
+    padding: 1rem;
+  }
+  .showcase {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card {
+    width: 100%;
+    height: 32rem;
+  }
+  .card img {
+    width: 100%;
+    height: 40%;
+  }
+  .card-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20%;
+  }
+  .title {
+    margin-left: 1rem;
+  }
+  .icon-holder {
+    display: none;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .showcase {
   background-color: #fffafa;
   padding: 1rem;
@@ -184,6 +254,10 @@ nav a {
 }
 
 #projects {
-  background-color: #e5e5e5;
+  background-color: #186d8b;
+}
+
+#projects .title {
+  color: #fffafa;
 }
 /*# sourceMappingURL=styles.css.map */
