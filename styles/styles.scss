@@ -69,9 +69,9 @@ html {
 
 header {
   text-align: center;
-  height: 90vh;
+  height: 100vh;
 
-  @include background-scale("../images/space.jpg");
+  @include background-scale("../images/synth.gif");
 }
 
 nav {
@@ -90,7 +90,7 @@ nav {
 
 .impArea {
   position: relative;
-  top: 35%;
+  top: 30%;
 
   color: $light;
 
@@ -205,9 +205,13 @@ nav {
 }
 
 // For large screens (desktop)
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1250px) {
   @include sm-card();
 
+  .title {
+    text-align: center;
+  }
+  
   .showcase {
     @include flex(row);
   }
@@ -218,7 +222,7 @@ nav {
 
     img {
       width: 100%;
-      height: 40%;
+      height: 27%;
     }
   }
 
@@ -233,7 +237,7 @@ nav {
   }
 
   .icon-holder {
-    display: none;
+    display: block;
   }
 
   .wrapper {
@@ -252,6 +256,7 @@ nav {
 .title {
   font-size: 1.5rem;
   color: #000000;
+  margin-bottom: 2rem;
 }
 
 #projects {
