@@ -211,7 +211,7 @@ nav {
   .title {
     text-align: center;
   }
-  
+
   .showcase {
     @include flex(row);
   }
@@ -245,6 +245,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 1rem;
   }
 }
 
@@ -264,5 +265,37 @@ nav {
 
   .title {
     color: $light;
+  }
+}
+
+//ARTICLE SECTION
+
+.article-nav {
+  background-color: $accent;
+  text-align: left;
+}
+
+.article-head {
+  text-align: center;
+  padding: 1rem;
+
+  img {
+
+    @media  screen and (min-width: 1000px) {
+      width: 50%;
+    }
+    width: 90%;
+    border-radius: $rounded-border;
+  }
+}
+
+.article-body {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+
+  h3 {
+    text-align: center;
   }
 }

@@ -243,6 +243,7 @@ nav a {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    gap: 1rem;
   }
 }
 
@@ -263,5 +264,37 @@ nav a {
 
 #projects .title {
   color: #fffafa;
+}
+
+.article-nav {
+  background-color: #186d8b;
+  text-align: left;
+}
+
+.article-head {
+  text-align: center;
+  padding: 1rem;
+}
+
+.article-head img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .article-head img {
+    width: 50%;
+  }
+}
+
+.article-body {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.article-body h3 {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
