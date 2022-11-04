@@ -20,6 +20,12 @@ $accent: #186d8b;
   border: 0;
   border-radius: $rounded-border;
 
+  text-decoration: none;
+
+  color: $dark;
+  background-color: $mid;
+
+
   &:hover {
     background-color: $accent;
     color: $light;
@@ -94,8 +100,11 @@ nav {
 
   color: $light;
 
-  button {
+  a {
     @include cta-button();
+    display: block;
+    width: fit-content;
+    margin: 1rem auto 0 auto;
   }
 }
 
@@ -281,9 +290,10 @@ nav {
 
   img {
 
-    @media  screen and (min-width: 1000px) {
+    @media screen and (min-width: 1000px) {
       width: 50%;
     }
+
     width: 90%;
     border-radius: $rounded-border;
   }
@@ -296,6 +306,31 @@ nav {
   padding: 2rem 0;
 
   h3 {
+    text-align: center;
+  }
+}
+
+.contact-methods {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+
+
+  gap: 1rem;
+
+  margin-top: 1rem;
+
+  div {
+    img {
+      width: 5rem;
+      filter: invert(1);
+    }
+
+    background-color: $accent;
+    padding: $sect-pad;
+    border-radius: $rounded-border;
+
+    color: $light;
     text-align: center;
   }
 }
