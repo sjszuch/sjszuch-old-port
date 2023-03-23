@@ -278,6 +278,14 @@ nav a {
   color: #fffafa;
 }
 
+#contact {
+  background-color: #186d8b;
+}
+
+#contact .title {
+  color: #fffafa;
+}
+
 .article-nav {
   background-color: #186d8b;
   text-align: left;
